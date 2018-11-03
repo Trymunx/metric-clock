@@ -1,28 +1,47 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <UTCClock/>
+    <MetricClock/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import UTCClock from "./components/UTCClock.vue";
+import MetricClock from "./components/MetricClock.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld
+    UTCClock,
+    MetricClock
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.hour {
+  font-size: 2em;
+  color: #4e4e5a;
+}
+.minute {
+  font-size: 2em;
+  color: #4e4e5a;
+}
+.second {
+  font-size: 2em;
+  color: #5e5e6a;
+}
+.time {
+  padding: 10px;
+  margin: 20px;
 }
 </style>
