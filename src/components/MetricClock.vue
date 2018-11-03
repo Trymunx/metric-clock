@@ -54,6 +54,7 @@ export default {
     time(val) {
       const progressBar = document.querySelector(".bar-length");
       progressBar.style.width = (val / 1000) + "%";
+      document.title = `${this.hours}:${this.minutes}:${this.seconds} – Metric Clock`
     }
   }
 }
