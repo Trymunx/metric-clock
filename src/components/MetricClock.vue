@@ -72,6 +72,7 @@ export default {
   border: solid 1px grey;
   border-radius: 4px;
   width: 80%;
+  max-width: 500px;
   height: 5px;
 }
 
